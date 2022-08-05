@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 app.use(express.json({}));
 
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY, {
+const stripe = require("stripe")("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", {
   apiVersion: "2020-08-27",
   appInfo: {
     // For sample support and debugging, not required for production:
